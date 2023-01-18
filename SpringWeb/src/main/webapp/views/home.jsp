@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>HTML & CSS in JSP Example</title>
+<title>Activity Details</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <style>
 /* CSS styles for the page */
@@ -14,12 +14,14 @@ body {
 
 h1 {
 	color: #ff0000; /* red text color */
+	font-size:40px;
 }
 /* more styles */
 .container {
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
+	font-size:18px;
 }
 
 .box {
@@ -34,18 +36,19 @@ h1 {
 </head>
 <body>
 	<div class="container">
-		<form:form method="post" action="submitForm">
+		<form style="font-size:18px" method="post" class="submit" action="submitForm">
 			<div class="form-group">
-				<label for="mySelect">Select an option:</label> 
-				<select
+			<br></br>
+				<label  for="mySelect">Select an activity type: </label> 
+				<select 
 					id="mySelect" name="mySelect">
-					<option value="option1">Option 1</option>
-					<option value="option2">Option 2</option>
-					<option value="option3">Option 3</option>
+					<option   value="option1">Trade</option>
+					<option   value="option2">Free movement</option>
 				</select>
 			</div>
-			<input class="btn btn-primary" type="submit" value="Submit">
-		</form:form>
+			<br><br>
+			<input  class="btn btn-primary" type="submit" value="Submit">
+		</form>
 	</div>
 </body>
 </html>
